@@ -25,7 +25,7 @@ jobs:
           echo "SNAPSHOT_HASH=$HASH" >> $GITHUB_ENV
       - name: Install tools
         run: |
-          brew install ninja libusbmuxd ideviceinstaller ios-deploy python@3.11
+          brew install ninja libusbmuxd ideviceinstaller ios-deploy
           brew install pipx
           pipx install wheel
           pipx install .
