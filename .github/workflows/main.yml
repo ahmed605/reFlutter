@@ -25,7 +25,7 @@ jobs:
           brew install ninja libusbmuxd ideviceinstaller ios-deploy python@3.13
           brew install pipx
           pipx install wheel
-          pipx install zombie-imp
+          pip install zombie-imp
           pipx install .
           git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
           git clone https://github.com/flutter/engine.git
