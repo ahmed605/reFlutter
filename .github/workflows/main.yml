@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-v2:
-    runs-on: macos-14
+    runs-on: macos-14-large
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
