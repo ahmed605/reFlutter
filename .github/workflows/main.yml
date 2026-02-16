@@ -22,9 +22,9 @@ jobs:
           echo "SNAPSHOT_HASH=$HASH" >> $GITHUB_ENV
       - name: Install tools
         run: |
-          brew install ninja libusbmuxd python@3.13
-          python3 -m pip install wheel
-          python3 -m pip install .
+          brew install ninja libusbmuxd ideviceinstaller ios-deploy python@3.13
+          brew install wheel
+          brew install .
           git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
           git clone https://github.com/flutter/engine.git
       - name: gclient sync
