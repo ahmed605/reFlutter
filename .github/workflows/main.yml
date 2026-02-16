@@ -26,10 +26,10 @@ jobs:
       - name: Install tools
         run: |
           brew install ninja libusbmuxd ideviceinstaller ios-deploy
+          brew install llvm
           brew install pipx
           pipx install wheel
           pipx install .
-          brew uninstall llvm
           git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
           git clone https://github.com/flutter/engine.git
       - name: gclient sync
